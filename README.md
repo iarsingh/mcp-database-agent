@@ -1,5 +1,12 @@
 # MCP Database Agent
 
+## Overview
+
+A tool-using agent lab built around MCP-style database tools. `GET /tools` lists three read-only tools, explain, sample_rows and list_indexes, and `POST /call` runs one of them. Calls that would apply changes or delete data are refused. A `/v1` ops API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Local laptop proof with read-only tools; it calls no hosted model and applies no production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
